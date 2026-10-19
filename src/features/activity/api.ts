@@ -3,7 +3,7 @@ import { fetchEnvelope } from '@/lib/api';
 import { tokenStore } from '@/lib/token-store';
 import type { ActivityListMeta, ActivityListQuery, ActivityLogEntry } from './types';
 
-const BASE = (import.meta.env.VITE_API_BASE_URL ?? 'https://api.buydesionline.com/api/v1').replace(
+const BASE = (import.meta.env.VITE_API_BASE_URL ?? 'https://dev.buydesionline.com/api/v1').replace(
   /\/+$/,
   '',
 );

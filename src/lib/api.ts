@@ -2,7 +2,7 @@ import { ApiError, type ApiEnvelope, type AuthTokens } from '@/types/api';
 import { tokenStore } from './token-store';
 
 const BASE_URL = (
-  import.meta.env.VITE_API_BASE_URL ?? 'https://api.buydesionline.com/api/v1'
+  import.meta.env.VITE_API_BASE_URL ?? 'https://dev.buydesionline.com/api/v1'
 ).replace(/\/+$/, '');
 
 interface RequestOptions extends Omit<RequestInit, 'body' | 'headers'> {

@@ -11,7 +11,7 @@ interface ReportRange {
 }
 
 const BASE = (
-  import.meta.env.VITE_API_BASE_URL ?? 'https://api.buydesionline.com/api/v1'
+  import.meta.env.VITE_API_BASE_URL ?? 'https://dev.buydesionline.com/api/v1'
 ).replace(/\/+$/, '');
 
 const buildParams = (r: ReportRange & { format?: 'json' | 'csv' }): URLSearchParams => {
